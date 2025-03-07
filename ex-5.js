@@ -12,3 +12,12 @@ let getJohnProfile = () => {
   });
 };
 // Start coding here
+const showError = async()=>{
+  try {
+const resolve = await getJohnProfile();
+console.log(resolve);
+  } catch (error){
+    console.log(error);
+  }
+}
+showError()
